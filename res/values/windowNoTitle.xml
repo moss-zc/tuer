@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <style name="FullHeightNoTitle" >
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:textSize">14dp</item>
+  </style>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest android:versionCode="1" android:versionName="1.0"
+    package="net.ice4c.tuer" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="7"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:icon="@drawable/logo"
+        android:label="@string/app_name" android:theme="@style/FullHeightNoTitle">
+        <activity android:label="@string/app_name" android:name="MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowMainList"/>
+        <activity android:name="DailyListActivity"/>
+        <activity android:name=".SingleDailyShow"/>
+        <activity android:name=".MyDailyListActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".WriteDailyActivity"/>
+        <activity android:name=".CommentSaveActivity"/>
+        <activity android:name=".AboutMe"/>
+        <activity android:name=".TitleBaseActivity"/>
+        <activity android:name=".TitlePagerBaseActivity"/>
+    </application>
+</manifest>

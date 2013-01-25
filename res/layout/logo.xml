@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+	android:layout_height="fill_parent"
+    android:background="#ffffff" >
+	  	<ImageView
+	        android:id="@+id/img_danceing"
+	          android:gravity="center_vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:src="@anim/danceing" 
+	        android:contentDescription="@string/app_name"
+	        />  
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#0000aa"
+        android:gravity="center" >
+	  	<TextView
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="fill_parent"
+	  	    android:gravity="center_vertical"
+	  	    android:text="@string/logo_appname"
+	  	    android:layout_weight="1"
+	  	    android:textSize="23dp" />
+	  	<TextView
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_gravity="bottom|center"
+	  	    android:text="@string/logo_copyright"
+	  	    android:textSize="12dp" />
+
+    </LinearLayout>
+	
+</LinearLayout>

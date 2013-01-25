@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+	<include layout="@layout/title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#333333"
+            android:text="@string/flow_text_flowname" />
+
+        <TextView
+            android:id="@+id/flow_name"
+            android:textSize="18dp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+     <EditText
+         android:id="@+id/flow_content"
+         android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:layout_weight="1"
+         android:singleLine="false"
+         android:ems="10"
+         android:gravity="top"
+         android:inputType="textMultiLine" >
+
+         <requestFocus />
+     </EditText>	
+</LinearLayout>

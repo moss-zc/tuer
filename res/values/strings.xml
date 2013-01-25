@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">兔耳日记</string>
+    <string name="app_url">tuer.me</string>
+    <string name="app_auhter">ice4c</string>
+    <string name="logo_appname">兔耳日记|tuer.me</string>
+    <string name="logo_copyright">版权所有©2012 兔耳日记|tuer.me|ice4c </string>
+    <string name="login_username">邮箱：</string>
+    <string name="login_pwd">密码：</string>
+    <string name="login_btn">登录</string>
+    <string name="write_text_bookname">日记本</string>
+    <string name="write_text_mind">心情</string>
+    <string name="write_text_weather">天气</string>
+    <string name="write_text_location">地点</string>
+    <string name="write_text_content">内容</string>
+    <string name="flow_text_content">内容：</string>
+    <string name="flow_text_flowname">回复：</string>
+    <string-array name="write_sniper_mind">
+        <item name="1">喜</item>
+        <item name="2">怒</item>
+        <item name="3">哀</item>
+        <item name="4">乐</item>
+    </string-array>
+    <string-array name="write_sniper_books">
+        <item name="1">喜</item>
+        <item name="2">怒</item>
+        <item name="3">哀</item>
+        <item name="4">乐</item>
+    </string-array>
+    <string-array name="write_sniper_weather">
+        <item>晴</item>
+        <item>阴</item>
+        <item>雨</item>
+        <item>雪</item>
+        <item>大风</item>
+    </string-array>
+</resources>
