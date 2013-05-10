@@ -30,7 +30,6 @@ public class AboutMe extends Activity implements TitleBarHandler{
 
 	@Override
 	public void onReplyButtonClick(View view) {
-		// TODO Auto-generated method stub
 		
 	}
 }

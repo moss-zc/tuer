@@ -21,5 +21,6 @@
         <activity android:name=".AboutMe"/>
         <activity android:name=".TitleBaseActivity"/>
         <activity android:name=".TitlePagerBaseActivity"/>
+        <activity android:name=".MyFriendsDailyListActivity"/>
     </application>
 </manifest>

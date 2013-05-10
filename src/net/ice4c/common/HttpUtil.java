@@ -40,20 +40,47 @@ import android.os.MemoryFile;
 import android.os.Message;
 import android.util.Log;
 
+/**
+ * 所有http操作的集合，提供对各种get，post方法的同步及异步调用
+ * @author ice4c
+ *
+ */
 public class HttpUtil {
+	/**
+	 * 当异步调用完成，将使用这个类型回调
+	 * @author ice4c
+	 *
+	 */
 	public interface OnCallback {
 		public void onCallback(Message msg);
 	}
 
+	/**
+	 *异步的，返回String的调用
+	 * @author ice4c
+	 *
+	 */
 	private interface AsycTaskForString {
 		public String doMethod() throws Exception;
 	}
 
+	/**
+	 * 异步的，返回字节数组的回调
+	 * @author ice4c
+	 *
+	 */
 	private interface AsycTaskForByteArr {
 		public byte[] doMethod() throws Exception;
 	}
 
+	/**
+	 * 用户生成任务的计时器
+	 */
 	private static Timer timer = new Timer();
+	
+	/**
+	 * 计时器的holder
+	 */
 	private static Handler handler = new Handler() {
 		public void handleMessage(Message msg) {
 			OnCallback callback = callbacks.get(msg.what);
@@ -63,10 +90,23 @@ public class HttpUtil {
 			}
 		};
 	};
+	/**
+	 * 用于区分task的编号
+	 */
 	private static int taskid = 0;
+	
+	/**
+	 * 将异步调用后对象存入hashMap，在异步读取数据完成时获取
+	 */
 	private static Map<Integer, OnCallback> callbacks = new WeakHashMap<Integer, OnCallback>();
 
-	// 异步执行
+	
+	/**
+	 * 这是一个
+	 * @param task
+	 * @param callback
+	 * @return
+	 */
 	private static boolean doAsyc(final AsycTaskForString task,
 			final OnCallback callback) {
 		callbacks.put(taskid, callback);
@@ -78,6 +118,7 @@ public class HttpUtil {
 					rtn = task.doMethod();
 				} catch (Exception e) {
 					Log.e("网络问题", "执行异步的网络请求出错", e);
+					throw new HttpException("执行异步的网络请求出错",e);
 				}
 				Bundle bd = new Bundle();
 				bd.putString("data", rtn);
