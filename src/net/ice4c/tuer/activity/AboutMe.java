@@ -1,6 +1,7 @@
-package net.ice4c.tuer;
+package net.ice4c.tuer.activity;
 
 import net.ice4c.common.TitleBarHandler;
+import net.ice4c.tuer.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

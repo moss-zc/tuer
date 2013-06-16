@@ -1,4 +1,4 @@
-package net.ice4c.tuer;
+package net.ice4c.tuer.activity;
 
 import java.io.IOException;
 import java.util.ArrayList;

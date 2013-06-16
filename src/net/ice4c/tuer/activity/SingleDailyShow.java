@@ -1,4 +1,4 @@
-package net.ice4c.tuer;
+package net.ice4c.tuer.activity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +14,7 @@ import net.ice4c.common.ListAdapterByNetImage;
 import net.ice4c.common.HttpUtil;
 import net.ice4c.common.HttpUtil.OnCallback;
 import net.ice4c.common.TitleBarHandler;
+import net.ice4c.tuer.R;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
@@ -31,7 +32,7 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import static net.ice4c.tuer.Params.*;
+import static net.ice4c.tuer.activity.Params.*;
 
 public class SingleDailyShow extends Activity implements OnCallback,
 		TitleBarHandler {

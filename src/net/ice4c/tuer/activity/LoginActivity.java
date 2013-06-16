@@ -1,6 +1,6 @@
-package net.ice4c.tuer;
+package net.ice4c.tuer.activity;
 
-import static net.ice4c.tuer.Params.PATTERN_MY_DIARYS_LOGIN;
+import static net.ice4c.tuer.activity.Params.PATTERN_MY_DIARYS_LOGIN;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,6 +13,7 @@ import javax.net.ssl.HandshakeCompletedListener;
 import net.ice4c.common.HttpUtil;
 import net.ice4c.common.HttpUtil.OnCallback;
 import net.ice4c.common.TitleBarHandler;
+import net.ice4c.tuer.R;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;

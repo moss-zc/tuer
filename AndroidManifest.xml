@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest android:versionCode="1" android:versionName="1.0"
     package="net.ice4c.tuer" xmlns:android="http://schemas.android.com/apk/res/android">
-    <uses-sdk android:minSdkVersion="7"/>
+    <uses-sdk android:minSdkVersion="4"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <application android:icon="@drawable/logo"
-        android:label="@string/app_name" android:theme="@style/FullHeightNoTitle">
-        <activity android:label="@string/app_name" android:name="MainActivity">
+        android:label="@string/app_name"
+        android:name=".Application">
+        <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShowMainList"/>
-        <activity android:name="DailyListActivity"/>
-        <activity android:name=".SingleDailyShow"/>
-        <activity android:name=".MyDailyListActivity"/>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".WriteDailyActivity"/>
-        <activity android:name=".CommentSaveActivity"/>
-        <activity android:name=".AboutMe"/>
-        <activity android:name=".TitleBaseActivity"/>
-        <activity android:name=".TitlePagerBaseActivity"/>
-        <activity android:name=".MyFriendsDailyListActivity"/>
+        <activity android:name=".activity.ShowMainList"/>
+        <activity android:name=".activity.DailyListActivity"/>
+        <activity android:name=".activity.SingleDailyShow"/>
+        <activity android:name=".activity.MyDailyListActivity"/>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.WriteDailyActivity"/>
+        <activity android:name=".activity.CommentSaveActivity"/>
+        <activity android:name=".activity.AboutMe"/>
+        <activity android:name=".activity.TitleBaseActivity"/>
+        <activity android:name=".activity.TitlePagerBaseActivity"/>
+        <activity android:name=".activity.MyFriendsDailyListActivity"/>
+        <activity android:name=".activity.AuthActivity"/>
     </application>
 </manifest>

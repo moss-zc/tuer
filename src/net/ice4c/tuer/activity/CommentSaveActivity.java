@@ -1,4 +1,4 @@
-package net.ice4c.tuer;
+package net.ice4c.tuer.activity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,6 +7,7 @@ import java.util.List;
 import net.ice4c.common.HttpUtil;
 import net.ice4c.common.HttpUtil.OnCallback;
 import net.ice4c.common.TitleBarHandler;
+import net.ice4c.tuer.R;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;

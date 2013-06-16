@@ -1,4 +1,4 @@
-package net.ice4c.tuer;
+package net.ice4c.tuer.activity;
 
 public class Params {
 	public final static String URL_MSITE = "http://m.tuer.me";// 兔耳手机主页

@@ -1,7 +1,7 @@
-package net.ice4c.tuer;
+package net.ice4c.tuer.activity;
 
-import static net.ice4c.tuer.Params.PATTERN_ALL_DIARYS_NOLOG;
-import static net.ice4c.tuer.Params.URL_ALL_DIARYS;
+import static net.ice4c.tuer.activity.Params.PATTERN_ALL_DIARYS_NOLOG;
+import static net.ice4c.tuer.activity.Params.URL_ALL_DIARYS;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +14,7 @@ import net.ice4c.common.HttpUtil;
 import net.ice4c.common.HttpUtil.OnCallback;
 import net.ice4c.common.ListAdapterByNetImage;
 import net.ice4c.common.TitleBarHandler;
+import net.ice4c.tuer.R;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ListActivity;
